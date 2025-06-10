@@ -1,47 +1,181 @@
-
 ---
-
-## 📝 Blog Post 2: Data Wrangling with Netflix Dataset
-
-**Filename**: `_posts/2025-06-11-data-wrangling-netflix.md`
-
-```markdown
----
-layout: single
-title: "Data Wrangling Netflix Dataset for Business Insights"
+title: "Cleaning the Mess: Data Wrangling with the Netflix Dataset"
 date: 2025-06-11
-author: "Printon Mauda"
-categories: [data-science, wrangling]
-tags: [pandas, cleaning, netflix]
-excerpt: "I cleaned and prepared Netflix data for analysis, dealing with duplicates, nulls, and datatype issues using pandas."
+layout: single
+categories: [projects, data-science]
+author_profile: true
+read_time: true
 ---
 
-## 🧹 Introduction
+Data wrangling — also known as data cleaning — is one of the most crucial steps in any data science project. It's where raw, inconsistent, and messy data gets transformed into a format that's clean, organized, and ready for analysis. In this project, I worked on wrangling the [Netflix Movies and TV Shows dataset from Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows).
 
-In this task, I cleaned a Netflix dataset using `pandas`. The raw CSV data had issues like nulls, duplicate rows, and mixed data types.
+## 🧹 The Dataset
 
-## 🔧 Key Steps
+The dataset contains information about Netflix titles, including attributes like:
+- Title
+- Director
+- Cast
+- Country
+- Date added
+- Release year
+- Rating
+- Duration
+- Type
+- Category
 
-- Dropped duplicate records
-- Converted release dates to datetime
-- Filled missing values
+But like many real-world datasets, it wasn’t clean.
+
+## 🛠️ Tools Used
+- **Python**
+- **Pandas**
+- **Jupyter Notebook**
+
+## 🔍 Problems I Encountered
+
+During initial inspection (`df.info()` and `df.isnull().sum()`), I noticed:
+- **Missing values** in `director`, `cast`, `country`, `date_added`
+- Inconsistent date formats
+- Duplicates
+- Mixed values in the `duration` column (e.g., “1 Season” vs “90 min”)
+- Typos and inconsistent capitalization in categorical data
+
+## 🧽 Cleaning Process
+
+1. **Removed Duplicates**
 
 ```python
 df.drop_duplicates(inplace=True)
-df['date_added'] = pd.to_datetime(df['date_added'])
-df['country'].fillna("Unknown", inplace=True)
-t after the second paragraph. The following YAML Front Matter has also be applied:
+Absolutely, Printon! Here's a well-structured blog post on **Data Wrangling**, based on the Netflix dataset assignment you worked on. This version is markdown-ready for your `_posts/` folder and includes placeholder spots for images if you want to add snapshots later.
 
-```yaml
-excerpt_separator: "<!--more-->"
+---
+
+### 📄 File Name (save in `_posts/`):
+
+`2025-06-11-data-wrangling-netflix.md`
+
+---
+
+### ✅ Full Blog Markdown Code:
+
+````markdown
+---
+title: "Cleaning the Mess: Data Wrangling with the Netflix Dataset"
+date: 2025-06-11
+layout: single
+categories: [projects, data-science]
+author_profile: true
+read_time: true
+---
+
+Data wrangling — also known as data cleaning — is one of the most crucial steps in any data science project. It's where raw, inconsistent, and messy data gets transformed into a format that's clean, organized, and ready for analysis. In this project, I worked on wrangling the [Netflix Movies and TV Shows dataset from Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows).
+
+## 🧹 The Dataset
+
+The dataset contains information about Netflix titles, including attributes like:
+- Title
+- Director
+- Cast
+- Country
+- Date added
+- Release year
+- Rating
+- Duration
+- Type
+- Category
+
+But like many real-world datasets, it wasn’t clean.
+
+## 🛠️ Tools Used
+- **Python**
+- **Pandas**
+- **Jupyter Notebook**
+
+## 🔍 Problems I Encountered
+
+During initial inspection (`df.info()` and `df.isnull().sum()`), I noticed:
+- **Missing values** in `director`, `cast`, `country`, `date_added`
+- Inconsistent date formats
+- Duplicates
+- Mixed values in the `duration` column (e.g., “1 Season” vs “90 min”)
+- Typos and inconsistent capitalization in categorical data
+
+## 🧽 Cleaning Process
+
+1. **Removed Duplicates**
+
+```python
+df.drop_duplicates(inplace=True)
+````
+
+2. **Handled Missing Values**
+
+For critical fields like `title` or `type`, I dropped rows. For others like `director`, I used `"Unknown"`:
+
+```python
+df['director'].fillna('Unknown', inplace=True)
 ```
 
-If you could keep awake (but of course you can't) you would see your own mother doing this, and you would find it very interesting to watch her. It is quite like tidying up drawers. You would see her on her knees, I expect, lingering humorously over some of your contents, wondering where on earth you had picked this thing up, making discoveries sweet and not so sweet, pressing this to her cheek as if it were as nice as a kitten, and hurriedly stowing that out of sight. When you wake in the morning, the naughtiness and evil passions with which you went to bed have been folded up small and placed at the bottom of your mind and on the top, beautifully aired, are spread out your prettier thoughts, ready for you to put on.
+3. **Date Standardization**
 
-I don't know whether you have ever seen a map of a person's mind. Doctors sometimes draw maps of other parts of you, and your own map can become intensely interesting, but catch them trying to draw a map of a child's mind, which is not only confused, but keeps going round all the time. There are zigzag lines on it, just like your temperature on a card, and these are probably roads in the island, for the Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose. It would be an easy map if that were all, but there is also first day at school, religion, fathers, the round pond, needle-work, murders, hangings, verbs that take the dative, chocolate pudding day, getting into braces, say ninety-nine, three-pence for pulling out your tooth yourself, and so on, and either these are part of the island or they are another map showing through, and it is all rather confusing, especially as nothing will stand still.
+The `date_added` column had mixed formats. I converted it to datetime:
 
-Of course the Neverlands vary a good deal. John's, for instance, had a lagoon with flamingoes flying over it at which John was shooting, while Michael, who was very small, had a flamingo with lagoons flying over it. John lived in a boat turned upside down on the sands, Michael in a wigwam, Wendy in a house of leaves deftly sewn together. John had no friends, Michael had friends at night, Wendy had a pet wolf forsaken by its parents, but on the whole the Neverlands have a family resemblance, and if they stood still in a row you could say of them that they have each other's nose, and so forth. On these magic shores children at play are for ever beaching their coracles [simple boat]. We too have been there; we can still hear the sound of the surf, though we shall land no more.
+```python
+df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
+```
 
-Of all delectable islands the Neverland is the snuggest and most compact, not large and sprawly, you know, with tedious distances between one adventure and another, but nicely crammed. When you play at it by day with the chairs and table-cloth, it is not in the least alarming, but in the two minutes before you go to sleep it becomes very real. That is why there are night-lights.
+4. **Standardized Text Data**
 
-Occasionally in her travels through her children's minds Mrs. Darling found things she could not understand, and of these quite the most perplexing was the word Peter. She knew of no Peter, and yet he was here and there in John and Michael's minds, while Wendy's began to be scrawled all over with him. The name stood out in bolder letters than any of the other words, and as Mrs. Darling gazed she felt that it had an oddly cocky appearance.
+```python
+df['rating'] = df['rating'].str.upper().str.strip()
+df['country'] = df['country'].str.title().str.strip()
+```
+
+5. **Separated Duration**
+
+I split the `duration` column into numeric and unit components:
+
+```python
+df[['duration_int', 'duration_type']] = df['duration'].str.extract('(\d+)\s+(\w+)')
+df['duration_int'] = df['duration_int'].astype(float)
+```
+
+## 🧾 Before and After Cleaning
+
+Before cleaning:
+
+```plaintext
+title       director    duration    rating     country
+--------    ---------   --------    -------    --------
+Movie A     NaN         1 Season    TV-14      United States
+Movie A     NaN         1 Season    TV-14      United States
+```
+
+After cleaning:
+
+```plaintext
+title       director    duration_int    duration_type    rating     country
+--------    ---------   -------------   --------------   -------    --------
+Movie A     Unknown     1.0             Season           TV-14      United States
+```
+
+## ✅ Final Result
+
+* Clean, deduplicated, and standardized dataset
+* Separated duration and normalized text fields
+* Handled all NaNs and removed irrelevant rows
+
+## 🧠 Key Takeaways
+
+* Always inspect your data before jumping to analysis.
+* Missing data doesn’t always need to be dropped — sometimes it can be labeled, filled, or transformed.
+* Clean data is **the backbone** of accurate insights.
+
+## 📊 What's Next?
+
+Now that the data is clean, I’m planning to:
+
+* Visualize content trends by year and country
+* Compare movie vs. TV show growth over time
+* Build a recommendation system using genres and user ratings
+
+Stay tuned for the next post.
