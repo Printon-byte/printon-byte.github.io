@@ -5,3 +5,12 @@
 layout: home
 author_profile: true
 ---
+
+# Printon Mauda Oduki
+
+## Education  
+**BSc. Statistics** – Jomo Kenyatta University of Agriculture and Technology
+
+## Academic Qualifications  
+**Bachelor's Degree**
+- **Data Science and AI**
