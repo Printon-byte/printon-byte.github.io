@@ -12,5 +12,5 @@ author_profile: true
 **BSc. Statistics** – Jomo Kenyatta University of Agriculture and Technology
 
 ## Academic Qualifications  
-**Bachelor's Degree**
+- **Bsc.Statistics**
 - **Data Science and AI**
