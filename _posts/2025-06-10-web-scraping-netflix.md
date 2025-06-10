@@ -23,6 +23,9 @@ As part of my data science learning journey, I tackled a web scraping assignment
 
 I targeted a publicly available Netflix dataset and used `requests` to fetch the HTML, and `BeautifulSoup` to parse it.
 
-```python
-soup = BeautifulSoup(html, 'html.parser')
-titles = soup.find_all('h1', class_='title')
+ Takeaways
+Learned how to extract structured data from HTML
+
+Gained experience working with messy real-world web structures
+
+This project laid the groundwork for deeper data extraction and ETL workflows.
