@@ -1,21 +1,36 @@
----
-title: "Post: Standard"
-excerpt_separator: "<!--more-->"
-categories:
-  - Blog
-tags:
-  - Post Formats
-  - readability
-  - standard
+
 ---
 
-All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, "Oh, why can't you remain like this for ever!" This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.
+## 📝 Blog Post 2: Data Wrangling with Netflix Dataset
 
-Mrs. Darling first heard of Peter when she was tidying up her children's minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.
+**Filename**: `_posts/2025-06-11-data-wrangling-netflix.md`
 
-<!--more-->
+```markdown
+---
+layout: single
+title: "Data Wrangling Netflix Dataset for Business Insights"
+date: 2025-06-11
+author: "Printon Mauda"
+categories: [data-science, wrangling]
+tags: [pandas, cleaning, netflix]
+excerpt: "I cleaned and prepared Netflix data for analysis, dealing with duplicates, nulls, and datatype issues using pandas."
+---
 
-This post has a manual excerpt `<!--more-->` set after the second paragraph. The following YAML Front Matter has also be applied:
+## 🧹 Introduction
+
+In this task, I cleaned a Netflix dataset using `pandas`. The raw CSV data had issues like nulls, duplicate rows, and mixed data types.
+
+## 🔧 Key Steps
+
+- Dropped duplicate records
+- Converted release dates to datetime
+- Filled missing values
+
+```python
+df.drop_duplicates(inplace=True)
+df['date_added'] = pd.to_datetime(df['date_added'])
+df['country'].fillna("Unknown", inplace=True)
+t after the second paragraph. The following YAML Front Matter has also be applied:
 
 ```yaml
 excerpt_separator: "<!--more-->"
