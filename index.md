@@ -14,3 +14,8 @@ author_profile: true
 ## Academic Qualifications  
 - **Bsc.Statistics**
 - **Data Science and AI**
+
+## Projects
+- [Webscraping using google collab](https://colab.research.google.com/drive/1scTPBJBw8uKUAKZeUw_PuJcu9gfpjHtV?usp=sharinghttps://colab.research.google.com/drive/1scTPBJBw8uKUAKZeUw_PuJcu9gfpjHtV?usp=sharing)
+- [Netflix Data Wrangling on Kaggle](https://www.kaggle.com/code/printon/notebook8193edf3de)
+- [Titanic EDA on Kaggle](https://www.kaggle.com/code/printon/printon-oduki-titanic-explaratory-data-analysis)
