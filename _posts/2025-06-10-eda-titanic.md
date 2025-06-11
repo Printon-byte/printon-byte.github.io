@@ -15,6 +15,7 @@ categories: [data-science, eda]
 tags: [titanic, seaborn, pandas]
 excerpt: "I used seaborn and pandas to explore the Titanic dataset, visualizing patterns in survival across age, gender, and class."
 ---
+![Titanic EDA](/assets/images/Exploratory-Data-Analysis.png)
 
 ## 🚢 Introduction
 
