@@ -6,7 +6,7 @@ categories: [projects, data-science]
 author_profile: true
 read_time: true
 ---
-
+![Netflix Data Wrangling](/assets/images/Data%20wrangling.jpeg)
 Data wrangling — also known as data cleaning — is one of the most crucial steps in any data science project. It's where raw, inconsistent, and messy data gets transformed into a format that's clean, organized, and ready for analysis. In this project, I worked on wrangling the [Netflix Movies and TV Shows dataset from Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows).
 
 ## 🧹 The Dataset
