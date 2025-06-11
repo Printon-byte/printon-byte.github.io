@@ -3,6 +3,22 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+![Printon](/assets/images/Printon.jpg)
+
+Hello, I’m **Printon Mauda Oduki**, a passionate data enthusiast with a background in **Statistics** and a growing skillset in **Data Science** and **Artificial Intelligence**.
+
+I earned my **BSc in Statistics** from **Jomo Kenyatta University of Agriculture and Technology**, where I developed a strong foundation in data analysis, probability, and predictive modeling.
+
+Over the past few months and year, I’ve explored:
+- **Web scraping** with Python to collect and analyze real-world data  
+- **Data wrangling** to clean and prepare datasets for deeper insights  
+- **Exploratory Data Analysis (EDA)** using Python libraries like Pandas, Seaborn, and Matplotlib  
+- **Business Intelligence (BI)** tools like Power BI for storytelling and dashboard creation  
+- And now, I'm diving into **machine learning and AI applications** to build smarter, data-driven systems
+
+Beyond data, I have a passion for **creativity, structure, and impact**—whether that’s through visual storytelling or building tools that make decision-making easier.
+
+Feel free to explore my [projects](/projects/) or connect with me on [GitHub](https://github.com/printon-byte).
+
+Thanks for stopping by.
