@@ -6,6 +6,12 @@ layout: home
 author_profile: true
 ---
 
+# Empowering insight through data.
+
+I am a data-driven problem solver with a background in Statistics and a growing passion for Data Science and Artificial Intelligence.  
+My goal is to use data to build solutions that inspire smarter decision-making, automate processes, and uncover hidden insights.
+
+
 # Printon Mauda Oduki
 
 ## Education  
