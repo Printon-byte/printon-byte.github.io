@@ -6,7 +6,7 @@ categories: [projects, data-science]
 author_profile: true
 read_time: true
 ---
-![Web scraping with Python](/assets/images/Webscraping.jpeg)
+![Web Scraping](/assets/images/Web%20scraping.jpeg)
 
 Web scraping is a fundamental technique for gathering large amounts of data from websites — especially when no official API is available. In this project, I simulated a scenario of scraping a dataset of Netflix titles, similar to those found on [Kaggle](https://www.kaggle.com/), to understand the logic and tools behind automated data extraction.
 
