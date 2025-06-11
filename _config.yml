@@ -44,7 +44,8 @@ plugins:
 
 author:
   name   : "Printon Mauda"
-  avatar : "/assets/images/printon.jpg"  # Upload this image to your repo
+  avatar : "![My Bio Photo](/assets/images/Printon-profile)
+"  # Upload this image to your repo
   bio    : "Statistician | Data Science Enthusiast | AI Explorer"
   links:
     - label: "Portfolio"
