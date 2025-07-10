@@ -1,18 +1,5 @@
 
 ---
-
-## 📝 Blog Post 3: Exploratory Data Analysis with Titanic Dataset
-
-**Filename**: `_posts/2025-06-12-eda-titanic.md`
-
-```markdown
----
-layout: single
-title: "Exploratory Data Analysis on Titanic Dataset"
-date: 2025-06-12
-author: "Printon Mauda"
-categories: [data-science, eda]
-tags: [titanic, seaborn, pandas]
 excerpt: "I used seaborn and pandas to explore the Titanic dataset, visualizing patterns in survival across age, gender, and class."
 ---
 
