@@ -1,9 +1,5 @@
 
 ---
-layout: post
-title: "Exploring Regression Models in Python"
-categories: [Python, Machine Learning]
----
 
 In Week 7, I dove into **regression analysis** using Python to predict continuous variables based on feature inputs.
 
