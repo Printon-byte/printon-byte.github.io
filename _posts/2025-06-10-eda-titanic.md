@@ -1,6 +1,6 @@
 
 ---
-excerpt: "I used seaborn and pandas to explore the Titanic dataset, visualizing patterns in survival across age, gender, and class."
+"I used seaborn and pandas to explore the Titanic dataset, visualizing patterns in survival across age, gender, and class."
 ---
 
 ![Exploratory Data Analysis](../assets/images/Exploratory-Data-Analysis-EDA.png)
